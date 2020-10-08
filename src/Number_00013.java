@@ -46,7 +46,7 @@ IC 和 IM 这样的例子并不符合题目要求，49 应该写作 XLIX，999 应该写作 CMXCIX 。
 
 public class Number_00013 {
     public static void main(String[] args) {
-
+        System.out.println("");
     }
     public int romanToInt(String s) {
         return -1;
