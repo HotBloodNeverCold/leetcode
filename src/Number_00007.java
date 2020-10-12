@@ -15,12 +15,12 @@ import java.util.Scanner;
         输入: 120
         输出: 21
         注意:
-        假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为[-2??,2??-1]。请根据这个假设，如果反转后整数溢出那么就返回0
+        假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为[-2 31,2 31-1]。请根据这个假设，如果反转后整数溢出那么就返回0
 */
 
 public class Number_00007 {
     public static void main(String[] args) {
-        System.out.println("input a number，no more than 2??-1 , no less than -2??");
+        System.out.println("input a number，no more than 2 31-1 , no less than -2 31");
         Integer num;
         while (true){
             try {
