@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="322fa0a5-1cf6-46af-b3cd-e2d4180475d7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Number_00013.java" afterPath="$PROJECT_DIR$/src/Number_00013.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +63,8 @@
       <file leaf-file-name="Number_00013.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Number_00013.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="916">
-              <caret line="126" column="29" lean-forward="false" selection-start-line="126" selection-start-column="29" selection-end-line="126" selection-end-column="29" />
+            <state relative-caret-position="308">
+              <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -649,7 +650,7 @@
       <workItem from="1601811156332" duration="1262000" />
       <workItem from="1602174323056" duration="304000" />
       <workItem from="1602205896337" duration="2363000" />
-      <workItem from="1602468242002" duration="8534000" />
+      <workItem from="1602468242002" duration="9227000" />
     </task>
     <task id="LOCAL-00001" summary="test class">
       <created>1601710245089</created>
@@ -693,11 +694,18 @@
       <option name="project" value="LOCAL" />
       <updated>1602482970076</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="leetcode">
+      <created>1602483016210</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602483016210</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23199000" />
+    <option name="totallyTimeSpent" value="23892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -1005,8 +1013,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Number_00013.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="916">
-          <caret line="126" column="29" lean-forward="false" selection-start-line="126" selection-start-column="29" selection-end-line="126" selection-end-column="29" />
+        <state relative-caret-position="308">
+          <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
           <folding />
         </state>
       </provider>

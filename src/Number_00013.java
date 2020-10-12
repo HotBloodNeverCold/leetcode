@@ -95,37 +95,30 @@ public class Number_00013 {
                 case 'M' :
                     sum += 1000;
                     s = s.replaceFirst("M","");
-                    System.out.println(s);
                     break;
                 case 'D' :
                     sum += 500;
                     s = s.replaceFirst("D","");
-                    System.out.println(s);
                     break;
                 case 'C' :
                     sum += 100;
                     s = s.replaceFirst("C","");
-                    System.out.println(s);
                     break;
                 case 'L' :
                     sum += 50;
                     s = s.replaceFirst("L","");
-                    System.out.println(s);
                     break;
                 case 'X' :
                     sum += 10;
                     s = s.replaceFirst("X","");
-                    System.out.println(s);
                     break;
                 case 'V' :
                     sum += 5;
                     s = s.replaceFirst("V","");
-                    System.out.println(s);
                     break;
                 case 'I' :
                     sum += 1;
                     s = s.replaceFirst("I","");
-                    System.out.println(s);
                     break;
             }
         }
