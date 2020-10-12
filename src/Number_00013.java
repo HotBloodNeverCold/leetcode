@@ -42,13 +42,93 @@ C可以放在D(500) 和M(1000) 的左边，来表示400 和900。
 题目所给测试用例皆符合罗马数字书写规则，不会出现跨位等情况。
 IC 和 IM 这样的例子并不符合题目要求，49 应该写作 XLIX，999 应该写作 CMXCIX 。
 关于罗马数字的详尽书写规则，可以参考 罗马数字 - Mathematics
+
+MCMXCIV
+
 */
 
 public class Number_00013 {
     public static void main(String[] args) {
-        System.out.println("");
+        System.out.println("请输入一个1~3999之间的罗马数字");
+        String str = new Scanner(System.in).next();
+        System.out.println("转换后的数字为：" + new Number_00013().romanToInt(str));
     }
     public int romanToInt(String s) {
-        return -1;
+        char[] array = s.toCharArray();
+        Integer sum = 0;
+        for (int i = 0 ; i < array.length ; i++) {
+            array = s.toCharArray();
+            if (s.contains("CM")){
+                sum += 900;
+                s = s.replace("CM","");
+                continue;
+            }
+            if (s.contains("CD")){
+                sum += 400;
+                s = s.replace("CD","");
+                continue;
+            }
+            if (s.contains("XC")){
+                sum += 90;
+                s = s.replace("XC","");
+                continue;
+            }
+            if (s.contains("XL")){
+                sum += 40;
+                s = s.replace("XL","");
+                continue;
+            }
+            if (s.contains("IX")){
+                sum += 9;
+                s = s.replace("IX","");
+                continue;
+            }
+            if (s.contains("IV")){
+                sum += 4;
+                s = s.replace("IV","");
+                continue;
+            }
+        }
+        array = s.toCharArray();
+        for (int i = 0 ; i < array.length ; i++) {
+            switch (array[i]){
+                case 'M' :
+                    sum += 1000;
+                    s = s.replaceFirst("M","");
+                    System.out.println(s);
+                    break;
+                case 'D' :
+                    sum += 500;
+                    s = s.replaceFirst("D","");
+                    System.out.println(s);
+                    break;
+                case 'C' :
+                    sum += 100;
+                    s = s.replaceFirst("C","");
+                    System.out.println(s);
+                    break;
+                case 'L' :
+                    sum += 50;
+                    s = s.replaceFirst("L","");
+                    System.out.println(s);
+                    break;
+                case 'X' :
+                    sum += 10;
+                    s = s.replaceFirst("X","");
+                    System.out.println(s);
+                    break;
+                case 'V' :
+                    sum += 5;
+                    s = s.replaceFirst("V","");
+                    System.out.println(s);
+                    break;
+                case 'I' :
+                    sum += 1;
+                    s = s.replaceFirst("I","");
+                    System.out.println(s);
+                    break;
+            }
+        }
+        return sum;
     }
 }
