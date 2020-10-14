@@ -4,30 +4,30 @@ import java.util.Scanner;
  * Created by zhangzehua on 2020/10/3.
  */
 
-/*¸ø³öÒ»¸ö 32 Î»µÄÓĞ·ûºÅÕûÊı£¬ÄãĞèÒª½«Õâ¸öÕûÊıÖĞÃ¿Î»ÉÏµÄÊı×Ö½øĞĞ·´×ª¡£
-        Ê¾Àı1:
-        ÊäÈë: 123
-        Êä³ö: 321
-        Ê¾Àı 2:
-        ÊäÈë: -123
-        Êä³ö: -321
-        Ê¾Àı 3:
-        ÊäÈë: 120
-        Êä³ö: 21
-        ×¢Òâ:
-        ¼ÙÉèÎÒÃÇµÄ»·¾³Ö»ÄÜ´æ´¢µÃÏÂ 32 Î»µÄÓĞ·ûºÅÕûÊı£¬ÔòÆäÊıÖµ·¶Î§Îª[-2 31,2 31-1]¡£Çë¸ù¾İÕâ¸ö¼ÙÉè£¬Èç¹û·´×ªºóÕûÊıÒç³öÄÇÃ´¾Í·µ»Ø0
+/*ç»™å‡ºä¸€ä¸ª 32 ä½çš„æœ‰ç¬¦å·æ•´æ•°ï¼Œä½ éœ€è¦å°†è¿™ä¸ªæ•´æ•°ä¸­æ¯ä½ä¸Šçš„æ•°å­—è¿›è¡Œåè½¬ã€‚
+        ç¤ºä¾‹1:
+        è¾“å…¥: 123
+        è¾“å‡º: 321
+        ç¤ºä¾‹ 2:
+        è¾“å…¥: -123
+        è¾“å‡º: -321
+        ç¤ºä¾‹ 3:
+        è¾“å…¥: 120
+        è¾“å‡º: 21
+        æ³¨æ„:
+        å‡è®¾æˆ‘ä»¬çš„ç¯å¢ƒåªèƒ½å­˜å‚¨å¾—ä¸‹ 32 ä½çš„æœ‰ç¬¦å·æ•´æ•°ï¼Œåˆ™å…¶æ•°å€¼èŒƒå›´ä¸º[-2 31,2 31-1]ã€‚è¯·æ ¹æ®è¿™ä¸ªå‡è®¾ï¼Œå¦‚æœåè½¬åæ•´æ•°æº¢å‡ºé‚£ä¹ˆå°±è¿”å›0
 */
 
 public class Number_00007 {
     public static void main(String[] args) {
-        System.out.println("input a number£¬no more than 2 31-1 , no less than -2 31");
+        System.out.println("input a numberï¼Œno more than 2 31-1 , no less than -2 31");
         Integer num;
         while (true){
             try {
                 num = new Scanner(System.in).nextInt();
                 Integer after_reverse = new Number_00007().reverse(num);
-                System.out.println("before£º" + num);
-                System.out.println("after change£º" + after_reverse);
+                System.out.println("beforeï¼š" + num);
+                System.out.println("after changeï¼š" + after_reverse);
                 System.out.println("continue or not : Y / N (case-insensitive)");
                 String continueOrNot = new Scanner(System.in).next();
                 if ("Y".equals(continueOrNot) || "y".equals(continueOrNot)){
