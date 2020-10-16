@@ -20,33 +20,45 @@ public class Number_00014 {
     public static void main(String[] args) {
         String[] array = {"flower","flow","flight"};
         String[] array1 = {"dog","racecar","car"};
+        String[] array2 = {"ab", "a"};
         System.out.println(new Number_00014().longestCommonPrefix(array));
         System.out.println(new Number_00014().longestCommonPrefix(array1));
+        System.out.println(new Number_00014().longestCommonPrefix(array2));
     }
     public String longestCommonPrefix(String[] strs) {
+        if (strs.length == 0){
+            return "";
+        }
+        if (strs.length == 1){
+            return strs[0];
+        }
         int min_length = strs[0].length();
         for (int i = 0 ; i < strs.length ; i++) {
             if (min_length > strs[i].length()){
                 min_length = strs[i].length();
             }
-        }
+        }//找出最短的单词长度
         //第一层循环次数为最短单词的字母数，第二层循环为每个字符串数组的长度，比对每个单词的特定字母是否一致
         String same_or_not = "";
-        String same = "";
         String compare = "";
+        String extend = "";
         for (int i = 0 ; i < min_length ; i++) {
-            same = String.valueOf(strs[0].charAt(i));
+            compare = String.valueOf(strs[0].charAt(i));
+            extend = compare;
             for (int j = 1 ; j < strs.length ; j++) {
-                if (!same.equals(String.valueOf(strs[j].charAt(i)))){
-                    if (same_or_not.length() != 0){
-                        return same_or_not;
-                    }
-                }else {
+                if (compare.equals(String.valueOf(strs[j].charAt(i)))){
                     compare = String.valueOf(strs[j].charAt(i));
+                    continue;
+                }else {
+                    return same_or_not;
                 }
             }
-            same_or_not = same_or_not.concat(String.valueOf(same));
+            if (compare.equals(extend)){
+                same_or_not = same_or_not.concat(compare);
+            }
         }
-        return "";
+        return same_or_not;
     }
 }
+
+

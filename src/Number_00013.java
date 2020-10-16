@@ -52,6 +52,7 @@ public class Number_00013 {
         System.out.println("请输入一个1~3999之间的罗马数字");
         String str = new Scanner(System.in).next();
         System.out.println("转换后的数字为：" + new Number_00013().romanToInt(str));
+        System.out.println(new Number_00013().romanToInt("MCMXCIV"));
     }
     public int romanToInt(String s) {
         char[] array = s.toCharArray();
