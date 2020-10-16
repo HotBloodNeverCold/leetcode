@@ -29,10 +29,10 @@
 
 public class Number_00020 {
     public static void main(String[] args) {
-        System.out.println(new Number_00020().isValid("()"));
+        /*System.out.println(new Number_00020().isValid("()"));
         System.out.println(new Number_00020().isValid("()[]{}"));
         System.out.println(new Number_00020().isValid("(]"));
-        System.out.println(new Number_00020().isValid("([)]"));
+        System.out.println(new Number_00020().isValid("([)]"));*/
         System.out.println(new Number_00020().isValid("{[]}"));
     }
     public boolean isValid(String s) {
@@ -56,12 +56,12 @@ public class Number_00020 {
                 array[i + 1] = '1';
             }
             for (int j = 0 ; j < array.length ; j++) {
-                System.out.println(array[j]);
-            }
-            for (int j = 0 ; j < array.length ; j++) {
                 change = change.concat(String.valueOf(array[j]));
             }
-            System.out.println(i + change);
+            change = change.replace(s,"");
+            change = change.replace("1","");
+//            s = change;
+            System.out.println(change);
         }
         boolean flag = false;
         for (int i = 0 ; i < array.length ; i++) {
