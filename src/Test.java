@@ -3,10 +3,14 @@
  */
 public class Test {
     public static void main(String[] args) {
-        double a = 1536.47;
-        double b = 539.73;
-        double c = 34.1;
-        double d = 0;
-        System.out.println(a + b + c + d);
+        String name = "jackrose";
+        System.out.println(name);
+        char array[] = name.toCharArray();
+        for (int i = 0 ; i < array.length; i++) {
+            array[i] = '1';
+        }
+        for (int i = 0 ; i < array.length ; i++) {
+            System.out.println(array[i]);
+        }
     }
 }
