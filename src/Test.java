@@ -9,8 +9,9 @@ public class Test {
         for (int i = 0 ; i < array.length; i++) {
             array[i] = '1';
         }
-        for (int i = 0 ; i < array.length ; i++) {
-            System.out.println(array[i]);
+        for (int i = 0 ; i < 10 ; i++) {
+            System.out.println(i);
+            i --;
         }
     }
 }

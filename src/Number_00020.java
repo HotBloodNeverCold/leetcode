@@ -29,11 +29,12 @@
 
 public class Number_00020 {
     public static void main(String[] args) {
-        /*System.out.println(new Number_00020().isValid("()"));
+        System.out.println(new Number_00020().isValid("()"));
         System.out.println(new Number_00020().isValid("()[]{}"));
         System.out.println(new Number_00020().isValid("(]"));
-        System.out.println(new Number_00020().isValid("([)]"));*/
+        System.out.println(new Number_00020().isValid("([)]"));
         System.out.println(new Number_00020().isValid("{[]}"));
+        System.out.println(new Number_00020().isValid("(("));
     }
     public boolean isValid(String s) {
         if (s.length() == 0){
@@ -43,7 +44,7 @@ public class Number_00020 {
             return false;
         }
         char[] array = s.toCharArray();
-        String change = "";
+        String change = "-1";
         for (int i = 0 ; i < s.length() - 1 ; i++) {
             if (s.length() == 0){
                 return true;
@@ -52,25 +53,18 @@ public class Number_00020 {
                     (array[i] == '[' && array[i + 1] == ']' ) ||
                     (array[i] == '{' && array[i + 1] == '}' )
                     ){
-                array[i] = '1';
-                array[i + 1] = '1';
-            }
-            for (int j = 0 ; j < array.length ; j++) {
-                change = change.concat(String.valueOf(array[j]));
-            }
-            change = change.replace(s,"");
-            change = change.replace("1","");
-//            s = change;
-            System.out.println(change);
-        }
-        boolean flag = false;
-        for (int i = 0 ; i < array.length ; i++) {
-            if (array[i] == '1'){
-                flag = true;
-            }else {
-                flag = false;
+                change = "";
+                for (int j = 0 ; j < array.length ; j++) {
+                    change = change.concat(String.valueOf(array[j]));
+                }
+                change = change.replace("{}","");
+                change = change.replace("()","");
+                change = change.replace("[]","");
+                s = change;
+                array = s.toCharArray();
+                i = -1;
             }
         }
-        return flag;
+        return change.length() == 0 ? true : false;
     }
 }
