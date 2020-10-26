@@ -10,7 +10,7 @@ public class Test {
                 897563.5,
                 11841778.2
         };
-        for (int i = 0 ; i < array.length ; i++) {
+        for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
         System.out.println(array.length);
