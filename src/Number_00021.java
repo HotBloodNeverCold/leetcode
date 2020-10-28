@@ -9,6 +9,11 @@
         输出：1->1->2->3->4->4
 */
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -22,10 +27,37 @@
 
 public class Number_00021 {
     public static void main(String[] args) {
-        ListNode listNode = new ListNode(1,new ListNode(2));
-        System.out.println(listNode);
+        /*ListNode l1 = new ListNode(1,new ListNode(2,new ListNode(4)));
+        ListNode l2 = new ListNode(1,new ListNode(3,new ListNode(4)));*/
+
+        ListNode l1 = new ListNode(1,new ListNode(2,new ListNode(4)));
+        ListNode l2 = new ListNode(1,new ListNode(1,new ListNode(1)));
+
+        ListNode listNode = new Number_00021().mergeTwoLists(l1,l2);
+        while (listNode.next != null){
+            System.out.println(listNode.val);
+            listNode = listNode.next;
+        }
     }
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        return null;
+        List<Integer> list = new ArrayList();
+        while (l1 != null){
+            list.add(l1.val);
+            l1 = l1.next;
+        }
+        while (l2 != null){
+            list.add(l2.val);
+            l2 = l2.next;
+        }
+        int array[] = new int[list.size()];
+        for (int i = 0 ; i < array.length ; i++) {
+            array[i] = list.get(i);
+        }
+        Arrays.sort(array);
+        ListNode listNode = new ListNode();
+        for (int i = array.length - 1 ; i >= 0 ; i --) {
+            listNode = ( i == array.length - 1 ) ? new ListNode(array[i]) : new ListNode(array[i],listNode);
+        }
+        return listNode;
     }
 }
