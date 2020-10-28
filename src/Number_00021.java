@@ -30,16 +30,18 @@ public class Number_00021 {
         /*ListNode l1 = new ListNode(1,new ListNode(2,new ListNode(4)));
         ListNode l2 = new ListNode(1,new ListNode(3,new ListNode(4)));*/
 
-        ListNode l1 = new ListNode(1,new ListNode(2,new ListNode(4)));
+        ListNode l1 = null;
         ListNode l2 = new ListNode(1,new ListNode(1,new ListNode(1)));
 
         ListNode listNode = new Number_00021().mergeTwoLists(l1,l2);
-        while (listNode.next != null){
-            System.out.println(listNode.val);
-            listNode = listNode.next;
-        }
+
+        System.out.println(listNode);
+
     }
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        if (l1 == null && l2 == null){
+            return null;
+        }
         List<Integer> list = new ArrayList();
         while (l1 != null){
             list.add(l1.val);
