@@ -28,7 +28,7 @@
 
 public class Number_00026 {
     public static void main(String[] args) {
-
+        System.out.println("");
     }
     public int removeDuplicates(int[] nums) {
         return -1;
