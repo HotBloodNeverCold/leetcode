@@ -22,7 +22,8 @@
 
 public class Number_00021 {
     public static void main(String[] args) {
-
+        ListNode listNode = new ListNode(1,new ListNode(2));
+        System.out.println(listNode);
     }
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         return null;
