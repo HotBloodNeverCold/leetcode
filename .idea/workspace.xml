@@ -722,7 +722,7 @@
       <workItem from="1606702185900" duration="607000" />
       <workItem from="1606787719154" duration="599000" />
       <workItem from="1606874500916" duration="604000" />
-      <workItem from="1606960906862" duration="608000" />
+      <workItem from="1606960906862" duration="637000" />
     </task>
     <task id="LOCAL-00001" summary="test class">
       <created>1601710245089</created>
@@ -913,11 +913,18 @@
       <option name="project" value="LOCAL" />
       <updated>1605259452659</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="leetcode">
+      <created>1606992588734</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1606992588734</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110689000" />
+    <option name="totallyTimeSpent" value="110718000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
